@@ -1,0 +1,169 @@
+body{
+    background-color: #e7e7e7;
+    font-family: Montserrat sans-serif;
+}
+
+header {
+    box-shadow: 0 5px 5px rgba(58, 173, 240, 0.2);
+    background: #FFF;
+}
+
+.imagem-logo {
+    position: relative;
+    width: 100%;
+    margin: 0 40px;
+    padding: 15px 15px;
+}
+
+header img {
+    width: 400px;
+}
+
+.span-marquee {
+    color: #007700;
+}
+
+header p {
+    display: inline;
+    margin-left: 30%;
+    font-size: 2em;
+    font-weight: bold;
+    color: #0077b6;
+    font-family: Helvetica, sans-serif;
+}
+
+/* css do main */
+
+    .main {
+        display: flex;
+        margin: 5px;
+    }
+
+    .caixa-1 {
+        margin: 15px 0 0 300px;
+    }
+
+    .caixa-2 {
+        display:block;
+        margin: 25px 0 0 300px;
+    }
+
+    .input-texto {
+        margin-top: 85px;
+        margin-left: 15px;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 30px;
+        padding: 2rem;
+        font-size: 20px;
+    }
+    .informacao {
+        margin-left: 15px;
+    }
+    .mensagens-erro li::before {
+        content: url(./images/exclamation.png);
+        width: 16px;
+        height: 17px;
+        vertical-align: middle;
+    }
+    .mensagens-erro li {
+        font-size: 20px;
+        margin-left: 25px;
+    }
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        margin-top: 57px;
+        margin-left: 15px;
+    }
+    button {
+        width: 325px;
+        height: 60px;
+        border: 1px solid #0a3871;
+        border-radius: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        box-shadow: 3px 5px 12px #356ea9;
+        transition: 1s all;
+    }
+
+    button:hover {
+        transition: 0.5s;
+        transform: scale(1.1);
+        opacity: 80%;
+    }
+
+    .btn-codificar {
+        background-color: #0077b6;
+        color: white;
+    }
+    .btn-decodificar {
+        margin-left: 30px;
+        background-color: #d8dfe8;
+        color: #0077b6;
+    }
+
+    .resultado {
+        position: relative;
+        border-color: transparent;
+        border-radius: 30px;
+        padding: 1rem;
+        font-size: 20px;
+    }
+    .resultado:placeholder-shown {
+        background-image: url(./images/resultado-bg.png);
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .resultado:not(:placeholder-shown) {
+        background-color: white;
+    }
+    .invisivel {
+        display: none;
+    }
+    .btn-copiar {
+        background-color: white;
+        margin-top: 24px;
+        margin-left: 50px;
+        color: #0a3871;
+    }
+
+
+/* termina css do main */
+
+.social{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: #0077b6;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 80px;
+}
+    
+.social a{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin: 20px auto;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.social p {
+    margin: 15px 0 0 10px ;
+}
+
+.social a img{
+    transition: 0.5s all;
+}
+
+.social a:hover > img{
+    transform: scale(1.6) rotate(25deg);
+}
