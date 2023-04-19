@@ -1,16 +1,17 @@
 body{
+    width: 100%;
     background-color: #e7e7e7;
     font-family: Montserrat sans-serif;
 }
 
 header {
+    /* width: 100%; */
     box-shadow: 0 5px 5px rgba(58, 173, 240, 0.2);
     background: #FFF;
 }
 
 .imagem-logo {
     position: relative;
-    width: 100%;
     margin: 0 40px;
     padding: 15px 15px;
 }
@@ -35,6 +36,8 @@ header p {
 /* css do main */
 
     .main {
+        min-width: 300px;
+        max-width: 940px;
         display: flex;
         margin: 5px;
     }
@@ -64,6 +67,7 @@ header p {
     .informacao {
         margin-left: 15px;
     }
+
     .mensagens-erro li::before {
         content: url(./images/exclamation.png);
         width: 16px;
