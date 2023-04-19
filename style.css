@@ -48,6 +48,10 @@ header p {
         margin: 25px 0 0 300px;
     }
 
+    textarea {
+        outline: none;
+    }
+
     .input-texto {
         margin-top: 85px;
         margin-left: 15px;
