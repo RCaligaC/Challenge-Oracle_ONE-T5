@@ -36,7 +36,7 @@ header p {
 
     .main {
         min-width: 300px;
-        max-width: 940px;
+        max-width: 960px;
         display: flex;
         margin: 5px;
     }
@@ -175,7 +175,7 @@ header p {
     transform: scale(1.6) rotate(25deg);
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
     main {
         width: 50%;
     }
