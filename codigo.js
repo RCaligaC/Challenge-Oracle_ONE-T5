@@ -1,8 +1,8 @@
 const inputTexto = document.querySelector(".input-texto");
 const resultado = document.querySelector(".resultado");
 
-const btnCodificar = document.querySelector(".btn-codificar");
-const btnDecodificar = document.querySelector(".btn-decodificar");
+const btnCriptografar = document.querySelector(".btn-criptografar");
+const btnDescriptografar = document.querySelector(".btn-descriptografar");
 
 const mensagensErro = document.querySelector(".mensagens-erro");
 
@@ -55,7 +55,7 @@ function escreveDecodificado() {
     resultado.textContent = descriptografar(inputTexto);
 }
 
-btnCodificar.onclick = function() {
+btnCriptografar.onclick = function() {
     let erros = validaTexto(inputTexto);
 
     if(erros.length > 0) {
@@ -68,7 +68,7 @@ btnCodificar.onclick = function() {
     mensagensErro.innerHTML = "";
 }
 
-btnDecodificar.onclick = function() {
+btnDescriptografar.onclick = function() {
     let erros = validaTexto(inputTexto);
 
     if(erros.length > 0) {
