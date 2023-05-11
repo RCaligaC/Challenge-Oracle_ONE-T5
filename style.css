@@ -35,17 +35,19 @@ header p {
 /* css do main */
 
     .main {
-        min-width: 300px;
-        max-width: 960px;
+        /* min-width: 300px;
+        max-width: 960px; */
         display: flex;
         margin: 5px;
     }
 
     .caixa-1 {
+        width: 40%;
         margin: 15px 0 0 300px;
     }
 
     .caixa-2 {
+        width: 40%;
         display:block;
         margin: 25px 0 0 300px;
     }
@@ -173,16 +175,4 @@ header p {
 
 .social a:hover > img{
     transform: scale(1.6) rotate(25deg);
-}
-
-@media screen and (max-width: 960px) {
-    main {
-        width: 50%;
-    }
-
-    .caixa-1, .caixa-2, .informacao, .botoes, .btn-codificar, 
-    .btn-decodificar, .btn-copiar, .input-texto, .mensagens-erro, 
-    .invisivel, .imagem-logo {
-        width: 50%;
-    }
 }
